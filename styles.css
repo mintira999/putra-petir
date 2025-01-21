@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  margin: 0;
+  overflow: hidden;
+}
+
+.game-container {
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+#gameArea {
+  width: 800px;
+  height: 600px;
+  background-color: #000;
+  position: relative;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+
+#player {
+  width: 50px;
+  height: 50px;
+  background-color: #00FF00;
+  position: absolute;
+  bottom: 20px;
+  left: 375px;
+  border-radius: 5px;
+}
+
+.bullet {
+  width: 5px;
+  height: 20px;
+  background-color: #FF0000;
+  position: absolute;
+  bottom: 70px;
+}
+
+.enemy {
+  width: 40px;
+  height: 40px;
+  background-color: #FF4500;
+  position: absolute;
+}
+
+#scoreBoard {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #FFD700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF8C00;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  width: 80px;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  #gameArea {
+      width: 100%;
+      height: 400px;
+  }
+
+  .controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .controls button {
+      font-size: 1.2rem;
+      padding: 10px 15px;
+  }
+}
